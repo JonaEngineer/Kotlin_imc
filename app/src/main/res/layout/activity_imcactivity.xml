@@ -167,11 +167,11 @@
                 android:id="@+id/tvWeight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text="600"
-
                 android:textColor="@color/white"
+
                 android:textSize="38sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:text="600" />
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
@@ -182,19 +182,19 @@
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btnSubtractWeight"
                     android:layout_width="wrap_content"
-                    android:src="@drawable/ic_subtract"
-                    app:tint="@color/white"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_subtract"
                     app:backgroundTint="@color/background_FAB"
-                    android:layout_marginEnd="16dp"/>
+                    app:tint="@color/white" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btnPlusWeight"
-                    android:src="@drawable/ic_plus"
-                    app:tint="@color/white"
-                    app:backgroundTint="@color/background_FAB"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_plus"
+                    app:backgroundTint="@color/background_FAB"
+                    app:tint="@color/white" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -231,10 +231,10 @@
                 android:id="@+id/tvAge"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text="20"
                 android:textColor="@color/white"
                 android:textSize="38sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:text="20" />
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
@@ -245,19 +245,19 @@
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btnSubtractAge"
                     android:layout_width="wrap_content"
-                    android:src="@drawable/ic_subtract"
-                    app:tint="@color/white"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_subtract"
                     app:backgroundTint="@color/background_FAB"
-                    android:layout_marginEnd="16dp"/>
+                    app:tint="@color/white" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btnPlusAge"
-                    android:src="@drawable/ic_plus"
-                    app:tint="@color/white"
-                    app:backgroundTint="@color/background_FAB"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_plus"
+                    app:backgroundTint="@color/background_FAB"
+                    app:tint="@color/white" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -269,9 +269,9 @@
         android:id="@+id/btnCalculate"
         android:layout_width="0dp"
         android:layout_height="80dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/Calculate"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:text="@string/Calculate"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
